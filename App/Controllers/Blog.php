@@ -14,7 +14,7 @@ class Blog{
 
 		$data['pagetitle'] = 'Posts page title';
 		$data['text'] = 'Some text For Posts Index';		
-		$data['posts'] = $viewmodel->Index() ;	
+		$data['posts'] = $viewmodel->get_posts() ;	
 	    
 	    View::renderTemplate($data, "../App/Views/blog/index.php") ;
 	}

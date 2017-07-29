@@ -3,7 +3,7 @@ namespace App\Models;
 
 class User_Model extends \Core\Model {
 
-	public function Index() {
+	public function get_users() {
 		$this->query('SELECT * FROM users');
 		
 		$set = $this->resultSet();
@@ -69,10 +69,7 @@ class User_Model extends \Core\Model {
 		if($row) {
 			return $row;
 		} 
-		else {
-			return false;
-		}
-
+		return false; 
 	}
 
 

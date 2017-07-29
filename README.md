@@ -12,10 +12,12 @@ This custom PHP framework makes use of namespaces the "public" directory contain
 
 
 Download Version 1:
-[php-framework v1](http://juancadima.com/projects/phpframework-shared-hosting.zip)
+[php-framework-v1](http://juancadima.com/downloads/phpframework/phpframework.zip)
 
- 
-Download Version 2:
+Download Version 1 (Shared Hosting )
+[php-framework-v1-shared-hosting](http://juancadima.com/downloads/phpframework_shared_hosting/phpframework-shared-hosting.zip)
+
+Download Version 2 (current):
 [php-framework v2](http://juancadima.com/downloads/phpframeworkv2/phpframeworkv2.zip)
 
 

@@ -21,7 +21,7 @@ Download Version 2 (current):
 [php-framework v2](http://juancadima.com/downloads/phpframeworkv2/phpframeworkv2.zip)
 
 
-The only requirements are to have a working Apache web server with PHP.
+The only requirements are to have a working Apache web server with PHP running at least v5.3
 #### Note: 
 If using IIS the controler/action will not work since this framework uses .htaccess for the URL rewriting
 
@@ -30,23 +30,47 @@ If using IIS the controler/action will not work since this framework uses .htacc
 ```bash
 http://domain/controller/action/{params}
 ```
-action and params are optional, if controller is not specified it will use a specified default controller.
+action and params are optional, if controller is not specified it will use a specified default home controller.
 
-To pass a view
+To call a view
 ```php
 View::renderTemplate($data, "./App/Views/blog/index.php") ;
 ```
 
 - Directories under /views share the same name of the controller class, for example a controller Home has a view called /views/home , and inside the folder name you would have and index and/or another file that would describe the action
 
-- You are able to pass an array with as many values as you like , and can also return objects from the model. i.e: 
+- You are able to pass an data array with as many values as you like , and can also return objects from the model. i.e: 
 ```php
-$viewmodel = new Post_Model();
-$data['pagetitle'] = 'Add a New Post';
-$data['add'] = $viewmodel->add() ;
-View::renderTemplate($data, "../App/Views/blog/add.php") ;
+public function index() {
+	$viewmodel = new Post_Model();
+
+	$data['pagetitle'] = 'Blog';
+	$data['text'] = 'Main Blog Heading';		
+	$data['posts'] = $viewmodel->getPosts() ;	
+    View::renderTemplate($data, "../App/Views/blog/index.php") ;
+}
 ```
 
+- Print $data values
+```
+<title><?php echo $pagetitle ;  ?></title>
+
+<?php foreach($posts as $post) : ?>
+	<div class="well">
+		<h3><?php echo $post['title']; ?></h3>
+		<small><?php echo $post['create_date']; ?></small>
+		<hr />
+		<p><?php echo substr( $post['body'] , 0 , 500) . "[...]" ; ?></p>
+		<br />
+		<a class="btn btn-default" href="<?php echo ROOT_PATH;  ?>blog/view/<?php echo $post['id']; ?>">Read More</a>
+	</div>
+<?php endforeach; ?>
+```
+
+- Set Session messages:
+```
+Messages::setMsg('Incorrect Login', 'error');
+```
 
 ### Database Tables Description
 Posts:

@@ -7,7 +7,7 @@ class Post_Model extends \Core\Model{
 /*====================================================
 	GET ALL POSTS
 ====================================================*/
-	public function get_posts(){
+	public function getPosts(){
 	//	Descending Posts
 		$this->query('SELECT * FROM posts ORDER BY create_date DESC');
 		$rows = $this->resultSet();

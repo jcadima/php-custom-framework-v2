@@ -3,7 +3,7 @@ namespace App\Models;
 
 class User_Model extends \Core\Model {
 
-	public function get_users() {
+	public function getUsers() {
 		$this->query('SELECT * FROM users');
 		
 		$set = $this->resultSet();

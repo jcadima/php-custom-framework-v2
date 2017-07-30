@@ -7,21 +7,21 @@ use App\Models\Post_Model;
 class Blog{
 
 /*====================================================
-	INDEX
+	DISPLAY ALL BLOG POSTS
 ====================================================*/
 	public function index() {
 		$viewmodel = new Post_Model();
 
 		$data['pagetitle'] = 'Posts page title';
 		$data['text'] = 'Some text For Posts Index';		
-		$data['posts'] = $viewmodel->get_posts() ;	
+		$data['posts'] = $viewmodel->getPosts() ;	
 	    
 	    View::renderTemplate($data, "../App/Views/blog/index.php") ;
 	}
    
 
 /*====================================================
-	ADD
+	ADD NEW BLOG POST
 ====================================================*/
 	public function add() {
 		// redirect to  /posts if its not logged in

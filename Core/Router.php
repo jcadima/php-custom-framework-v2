@@ -20,7 +20,7 @@ class Router{
 
 			$this->url_controller =  isset($url[0]) ? $url[0] : null;	
 			$this->url_action     =  isset($url[1]) ? $url[1] : 'index';
-			$this->params        = array_slice($url,2)  ;
+			$this->params         = array_slice($url,2)  ;
 		}
 
 	} // END constructor

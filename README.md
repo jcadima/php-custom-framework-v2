@@ -6,6 +6,8 @@ A simple blog and user registration is integrated into this php custom framework
 # REQUIREMENTS
 - PHP 5.3.x > with PDO
 
+# TUTORIAL
+[mvc-tutorial](http://juancadima.com/custom-php-mvc-framework-part-1-introduction/)
 
 ### Installation
 This custom PHP framework makes use of namespaces the "public" directory contains the front controller.

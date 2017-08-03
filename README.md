@@ -9,6 +9,9 @@ A simple blog and user registration is integrated into this php custom framework
 # TUTORIAL
 [mvc-tutorial](http://juancadima.com/custom-php-mvc-framework-part-1-introduction/)
 
+# DEMO
+[demo](http://phpframework.juancadima.com/)
+
 ### Installation
 This custom PHP framework makes use of namespaces the "public" directory contains the front controller.
 

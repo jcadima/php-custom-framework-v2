@@ -1,3 +1,4 @@
+<!--  /App/Views/admin/posts/index.php -->
 <?php  Core\Messages::isLoggedIn() ; ?>
 
 <h1>ADMIN DASHBOARD FOR POSTS</h1>

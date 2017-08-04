@@ -1,4 +1,4 @@
-
+<!-- /App/Views/admin/register.php  -->
 <hr>
 <h5>Print values from $data array:</h5>
 <?php

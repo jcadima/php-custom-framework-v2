@@ -1,4 +1,4 @@
-<!--  MAIN.PHP -->
+<!--  /App/Views/main.php -->
 <?php  include 'includes/header.php'; ?>
     
 

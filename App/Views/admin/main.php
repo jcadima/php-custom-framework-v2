@@ -14,6 +14,7 @@
     <script src="script.js"></script>
   </head>
   <body>
+<!--  /App/Views/admin/main.php  -->
   <h1>ADMIN DASHBOARD PAGE</h1>
 
 <h3>Posts</h3>

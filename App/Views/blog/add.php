@@ -1,3 +1,5 @@
+<!-- /App/Views/blog/add.php  -->
+
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Post Something!</h3>

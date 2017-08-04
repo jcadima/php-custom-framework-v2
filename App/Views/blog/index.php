@@ -1,3 +1,4 @@
+<!--  /App/Views/blog/index.php -->
 <div>
 	
 	<?php   // do not display the add POST button if user is not logged in 

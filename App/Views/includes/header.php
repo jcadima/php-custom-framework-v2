@@ -24,8 +24,9 @@
             <li><a href="<?php echo ROOT_URL; ?>blog">Blog</a></li>
             <li><a href="<?php echo ROOT_URL; ?>contact">Contactus</a></li>
             <?php if(isset($_SESSION['is_logged_in'])) : ?>
-            <li><a href="<?php echo ROOT_URL; ?>posts">Admin Posts</a></li>
-            <li><a href="<?php echo ROOT_URL; ?>users">Admin Users</a></li>
+              <li><a href="<?php echo ROOT_URL; ?>posts">View Posts</a></li>
+              <li><a href="<?php echo ROOT_URL; ?>users">View Users</a></li>
+              <li><a href="<?php echo ROOT_PATH; ?>blog/add">Add New Post</a></li>
             <?php else : ?>
             <li><a href="<?php echo ROOT_URL; ?>authenticate/login">Admin Login</a></li>
             <li><a href="<?php echo ROOT_URL; ?>authenticate/register">Admin Register</a></li>

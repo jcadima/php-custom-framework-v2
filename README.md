@@ -23,10 +23,11 @@ Download Version 1 (Shared Hosting )
 [php-framework-v1-shared-hosting](http://juancadima.com/downloads/phpframework_shared_hosting/phpframework-shared-hosting.zip)
 
 Download Version 2 (current):
-[php-framework v2](http://juancadima.com/downloads/phpframeworkv2/phpframeworkv2.zip)
+[php-framework v2](https://github.com/jcadima/php-custom-framework-v2/archive/master.zip)
 
 
 The only requirements are to have a working Apache web server with PHP running at least v5.3
+
 #### Note: 
 If using IIS the controler/action will not work since this framework uses .htaccess for the URL rewriting
 

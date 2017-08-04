@@ -1,3 +1,4 @@
+<!--  /App/Views/blog/view.php  -->
 <div>
 	<div class="well">
 			<h3><?php echo $postid['title']; ?></h3>

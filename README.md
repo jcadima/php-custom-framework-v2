@@ -58,7 +58,7 @@ public function index() {
 ```
 
 - Print $data values
-```
+```php
 <title><?php echo $pagetitle ;  ?></title>
 
 <?php foreach($posts as $post) : ?>
@@ -74,7 +74,7 @@ public function index() {
 ```
 
 - Set Session messages:
-```
+```php
 Messages::setMsg('Incorrect Login', 'error');
 ```
 

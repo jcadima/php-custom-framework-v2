@@ -7,6 +7,7 @@
   <script src="<?php echo ROOT_PATH; ?>assets/js/bootstrap.js"></script>
 </head>
 <body>
+  <!-- /App/Views/includes/header.php -->
   <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">

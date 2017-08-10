@@ -3,6 +3,8 @@
 This is a custom PHP framework for personal web applications, it aims to be simple, lightweight and flexible, the code is for learning purposes and is not intended to be used "as is" in production environments.
 A simple blog and user registration is integrated into this php custom framework.
 
+New functionality will be added weekly.
+
 # REQUIREMENTS
 - PHP 5.3.x > with PDO
 

@@ -106,6 +106,17 @@ Users:
 ```
 
 
+### Todo
+
+* [x] Implement new htaccess rewrite
+* [x] New Router class
+* [x] Assign namespace based on class name
+* [x] Allow passing dynamic method arguments
+* [x] Dynamically create new instances based on URL controller names
+* [ ] Create new admin dashboard 
+* [ ] User interface to create/edit/delete Pages and Posts
+* [ ] Add main site settings
+* [ ] Integrate Google maps (allow user to enter an address and draw map directions)
 
 
 

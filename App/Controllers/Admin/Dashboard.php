@@ -9,9 +9,15 @@ class Dashboard {
 
 	public function main() {
 		$data['pagetitle'] = 'Main Dashboard';
+		// GET POSTS
 		$viewmodel = new Post_Model();
-		$data['posts'] = $viewmodel->getPosts() ;	// get list of posts
-		View::renderTemplate($data, "../App/Views/admin/main.php") ;
+		$data['posts'] = $viewmodel->getPosts() ;
+
+		// GET USERS
+		$viewmodel = new User_model() ;
+		$data['users'] = $viewmodel->getUsers() ;
+
+		View::renderAdminTemplate($data, "../App/Views/admin/maindashboard.php") ;
 
 	}
  

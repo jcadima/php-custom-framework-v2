@@ -7,6 +7,11 @@ class View {
 		extract($viewData) ;		
 		require('../App/Views/main.php');
 	}	
+
+	public static function renderAdminTemplate( $viewData, $viewPath) {
+		extract($viewData) ;
+		require('../App/Views/adminMain.php') ;
+	}
 	
 }
 

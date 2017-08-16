@@ -20,7 +20,7 @@ class Posts{
 		$data['pagetitle'] = 'Dashboard - Edit Posts';
 
 		$data['postid'] = $viewmodel->getPostById($postid['id'] );
-		View::renderTemplate($data, "../App/Views/admin/edit/index.php") ;
+		View::renderAdminTemplate($data, "../App/Views/admin/edit/index.php") ;
 	}
 
 }

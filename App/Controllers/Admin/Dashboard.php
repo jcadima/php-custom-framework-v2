@@ -3,6 +3,7 @@
 namespace App\Controllers\Admin;
 
 use \Core\View;
+use App\Models\User_model; 
 use App\Models\Post_Model;
 
 class Dashboard {

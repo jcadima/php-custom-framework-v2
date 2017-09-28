@@ -1,0 +1,40 @@
+
+.user-panel > .image > img {
+    max-width: 170px;
+}
+
+.main-sidebar, .left-side {
+    padding-top: 0px;
+}
+
+.skin-blue .main-sidebar {
+  background: #2e3244;
+}
+
+.skin-blue .main-header .navbar {
+    background-color: #2e3244;
+}
+
+.info-box-icon {
+    width: 120px;
+}
+
+
+.info-box-content {
+    margin-left: 130px;
+}
+
+.active  {
+    font-weight: bold;
+    background: #f4b357;
+    color: #fff !important;
+}
+
+.btn_return {
+    background: #e75f2d;
+}
+
+.btn_logout {
+    background: #b71313;
+    margin-left: 10px;
+}

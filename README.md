@@ -3,7 +3,6 @@
 This is a custom PHP framework for personal web applications, it aims to be simple, lightweight and flexible, the code is for learning purposes and is not intended to be used "as is" in production environments.
 A simple blog and user registration is integrated into this php custom framework.
 
-New functionality will be added weekly.
 
 # REQUIREMENTS
 - PHP 5.3.x > with PDO
@@ -15,20 +14,15 @@ New functionality will be added weekly.
 [demo](http://phpframework.juancadima.com/)
 
 ### Installation
-This custom PHP framework makes use of namespaces the "public" directory contains the front controller.
-
 
 Download Version 1:
 [php-framework-v1](http://juancadima.com/downloads/phpframework/phpframework.zip)
 
-Download Version 1 (Shared Hosting )
-[php-framework-v1-shared-hosting](http://juancadima.com/downloads/phpframework_shared_hosting/phpframework-shared-hosting.zip)
-
 Download Version 2 (current):
 [php-framework v2](https://github.com/jcadima/php-custom-framework-v2/archive/master.zip)
 
-
 The only requirements are to have a working Apache web server with PHP running at least v5.3
+Also a nginx file is provided:  nginx_config.txt
 
 #### Note: 
 If using IIS the controler/action will not work since this framework uses .htaccess for the URL rewriting
@@ -38,7 +32,7 @@ If using IIS the controler/action will not work since this framework uses .htacc
 ```bash
 http://domain/controller/action/{params}
 ```
-action and params are optional, if controller is not specified it will use a specified default home controller.
+action and {params} are optional, if controller is not specified it will use a specified default home controller.
 
 To call a view
 ```php
@@ -106,6 +100,9 @@ Users:
 | register_date | datetime     | NO   |     | CURRENT_TIMESTAMP |                |
 +---------------+--------------+------+-----+-------------------+----------------+
 ```
+
+Settings:
+in progress
 
 
 ### Todo

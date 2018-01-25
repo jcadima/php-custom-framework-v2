@@ -45,7 +45,7 @@ class Authenticate {
 		}
 		else {
 			// login index ;
-			View::renderTemplate($data, "../App/Views/admin/login.php") ;
+			View::renderTemplate($data, "App/Views/admin/login.php") ;
 		}
 
 	}
@@ -69,7 +69,7 @@ class Authenticate {
 		$viewmodel = new User_Model();
 		$data['loginIndex'] =  $viewmodel->register() ;
 		$data['pagetitle'] = "Register Page Title" ;
-		View::renderTemplate($data, "../App/Views/admin/register.php") ;
+		View::renderTemplate($data, "App/Views/admin/register.php") ;
 	}
 
  

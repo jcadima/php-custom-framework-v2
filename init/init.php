@@ -3,7 +3,7 @@
 session_start();
 
 // include configuration
-require_once '../config/config.php' ;
+require_once 'config/config.php' ;
 
 function multiple_directory_autoload($class) {
     $root = dirname(__DIR__);   // get the parent directory

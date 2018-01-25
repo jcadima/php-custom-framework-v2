@@ -18,7 +18,7 @@ class Dashboard {
 		$viewmodel = new User_model() ;
 		$data['users'] = $viewmodel->getUsers() ;
 
-		View::renderAdminTemplate($data, "../App/Views/admin/maindashboard.php") ;
+		View::renderAdminTemplate($data, "App/Views/admin/maindashboard.php") ;
 
 	}
  

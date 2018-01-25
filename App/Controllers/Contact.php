@@ -10,7 +10,7 @@ class Contact{
 		$data['pagetitle'] = 'Contact page title';
 		$data['text'] = 'Some text';
 		
-		View::renderTemplate($data, "../App/Views/contact/index.php") ;
+		View::renderTemplate($data, "App/Views/contact/index.php") ;
 	}
 
 } 

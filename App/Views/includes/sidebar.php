@@ -2,8 +2,8 @@
 <ul id="nav" class="sidebar-menu">
 
   <!-- ########### DASHBOARD ###########  -->
-  <li class="<?php echo  ( end($_GET) == "dashboard/main" ) ? 'active' : ''  ;  ?>">
-    <a href="<?php echo ROOT_URL; ?>dashboard/main">
+  <li class="<?php echo  ( end($_GET) == "admin/dashboard/main" ) ? 'active' : ''  ;  ?>">
+    <a href="<?php echo ROOT_URL; ?>admin/dashboard/main">
       <i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span>
     </a>
   </li>
@@ -17,7 +17,7 @@
       </a>
 
       <ul class="treeview-menu">
-        <li><a class="menu" href="<?php echo ROOT_URL; ?>posts"><i class="fa fa-file-o" aria-hidden="true"></i> View All Posts</a></li>
+        <li><a class="menu" href="<?php echo ROOT_URL; ?>admin/posts"><i class="fa fa-file-o" aria-hidden="true"></i> View All Posts</a></li>
       </ul>
     </li>
 
@@ -29,7 +29,7 @@
         </span>
       </a>
       <ul class="treeview-menu">
-        <li><a class="menu" href="<?php echo ROOT_URL; ?>users"><i class="fa fa-user" aria-hidden="true"></i> View All Users</a></li>
+        <li><a class="menu" href="<?php echo ROOT_URL; ?>admin/users"><i class="fa fa-user" aria-hidden="true"></i> View All Users</a></li>
       </ul>
   </li>
 

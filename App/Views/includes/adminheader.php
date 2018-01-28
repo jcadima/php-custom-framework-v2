@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
           <!-- Control Sidebar Toggle Button -->
           <li><a target="_blank" class="btn_return" href="<?php echo ROOT_URL ; ?>">Return to Main Site <i class="fa fa-external-link-square" aria-hidden="true"></i></a></li>
-          <li><a class="btn_logout" href="<?php echo ROOT_URL ; ?>authenticate/logout">Logout</a></li>
+          <li><a class="btn_logout" href="<?php echo ROOT_URL ; ?>admin/authenticate/logout">Logout</a></li>
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>

@@ -7,7 +7,7 @@
   <script src="<?php echo ROOT_PATH; ?>assets/js/bootstrap.js"></script>
 </head>
 <body>
-  <!-- /App/Views/includes/header.php -->
+  <!-- START == /App/Views/includes/header.php == -->
   <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -24,23 +24,22 @@
             <li><a href="<?php echo ROOT_URL; ?>">Home</a></li>
             <li><a href="<?php echo ROOT_URL; ?>blog">Blog</a></li>
             <li><a href="<?php echo ROOT_URL; ?>contact">Contactus</a></li>
-            <?php if(isset($_SESSION['is_logged_in'])) : ?>
-              <li><a href="<?php echo ROOT_URL; ?>posts">View Posts</a></li>
-              <li><a href="<?php echo ROOT_URL; ?>users">View Users</a></li>
-              <li><a href="<?php echo ROOT_PATH; ?>blog/add">Add New Post</a></li>
-            <?php else : ?>
-            <li><a href="<?php echo ROOT_URL; ?>authenticate/login">Admin Login</a></li>
-            <li><a href="<?php echo ROOT_URL; ?>authenticate/register">Admin Register</a></li>
-            <?php endif; ?>
           </ul>
 
           <ul class="nav navbar-nav pull-right">
             <?php if(isset($_SESSION['is_logged_in'])) : ?>
+          <!--
             <li><a href="<?php echo ROOT_URL; ?>">Welcome <?php echo $_SESSION['user_data']['name']; ?></a></li>
-            <li><a href="<?php echo ROOT_URL; ?>authenticate/logout">Logout</a></li>
+          -->
+            <li><a href="<?php echo ROOT_URL; ?>admin/authenticate/logout">Logout</a></li>
+
+          <?php else :  ?>
+            <li><a href="<?php echo ROOT_URL; ?>admin/authenticate/login">Login</a></li>
+            <li><a href="<?php echo ROOT_URL; ?>admin/authenticate/register">Register</a></li>
             <?php endif; ?>
           </ul>
 
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+<!--  END == /App/Views/includes/header.php == -->

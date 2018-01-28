@@ -1,4 +1,4 @@
-<!--  /App/Views/adminMain.php -->
+<!--  /App/Views/adminlayout.php -->
 
 <?php  Core\Messages::isLoggedIn() ; ?>
 

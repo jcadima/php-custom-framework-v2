@@ -1,4 +1,4 @@
-<!--  /App/Views/admin/maindashboard.php  -->
+<!-- START == /App/Views/admin/maindashboard.php == -->
 
   <h1>ADMIN DASHBOARD PAGE</h1>
 
@@ -22,3 +22,4 @@
       <?php endforeach; ?>
   </div>
 
+<!-- END == /App/Views/admin/maindashboard.php == -->

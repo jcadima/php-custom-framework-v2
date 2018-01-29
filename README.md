@@ -4,13 +4,13 @@ This is a custom PHP framework for personal web applications, it aims to be simp
 A simple blog and user registration is integrated into this php custom framework.
 
 
-# REQUIREMENTS
+### REQUIREMENTS
 - PHP 5.3.x > with PDO
 
-# TUTORIAL
+### TUTORIAL
 [mvc-tutorial](http://juancadima.com/custom-php-mvc-framework-part-1-introduction/)
 
-# DEMO
+### DEMO
 [demo](http://phpframework.juancadima.com/)
 
 ### Installation
@@ -21,13 +21,13 @@ Download Version 1:
 Download Version 2 (current):
 [php-framework v2](https://github.com/jcadima/php-custom-framework-v2/archive/master.zip)
 
-The only requirements are to have a working Apache web server with PHP running at least v5.3
-Also a nginx file is provided:  nginx_config.txt
+The only requirements are to have a working Apache web server with PHP running at least v5.3<br>
+Also a nginx file is provided:  [nginx_config.txt](https://github.com/jcadima/php-custom-framework-v2/blob/master/nginx_config.txt)
 
-#### Note: 
-If using IIS the controler/action will not work since this framework uses .htaccess for the URL rewriting
+### Note for IIS servers: 
+The following web.config file may work but its not guaranteed: web.config
 
-# Project Details & Structure
+### Project Details & Structure
 - The main URL structure should be in this format: 
 ```bash
 http://domain/controller/action/{params}
@@ -36,7 +36,7 @@ action and {params} are optional, if controller is not specified it will use a s
 
 To call a view
 ```php
-View::renderTemplate($data, "./App/Views/blog/index.php") ;
+View::renderTemplate($data, "App/Views/blog/index.php") ;
 ```
 
 - Directories under /views share the same name of the controller class, for example a controller Home has a view called /views/home , and inside the folder name you would have and index and/or another file that would describe the action
@@ -49,7 +49,7 @@ public function index() {
 	$data['pagetitle'] = 'Blog';
 	$data['text'] = 'Main Blog Heading';		
 	$data['posts'] = $viewmodel->getPosts() ;	
-    View::renderTemplate($data, "../App/Views/blog/index.php") ;
+    View::renderTemplate($data, "App/Views/blog/index.php") ;
 }
 ```
 
@@ -108,7 +108,7 @@ in progress
 ### Todo
 
 * [x] Implement new htaccess rewrite
-* [x] New Router class
+* [x] New Routing System based on regular expressions
 * [x] Assign namespace based on class name
 * [x] Allow passing dynamic method arguments
 * [x] Dynamically create new instances based on URL controller names

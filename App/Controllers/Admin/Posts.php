@@ -12,7 +12,7 @@ class Posts{
 		$viewmodel = new Post_Model();
 		$data['posts'] = $viewmodel->getPosts() ;	// get list of posts
 
-		View::renderTemplate($data, "App/Views/admin/posts/index.php") ;
+		View::renderAdminTemplate($data, "App/Views/admin/posts/index.php") ;
 		
 	}
 	

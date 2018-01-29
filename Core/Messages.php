@@ -38,7 +38,7 @@ class Messages{
 ====================================================*/
 	public static function isLoggedIn()  {
 	if( !isset($_SESSION['is_logged_in']) ) 
-		header('Location: '.ROOT_URL.'authenticate/login');
+		header('Location: '.ROOT_URL.'admin/authenticate/login');
 	}
 
 }

@@ -35,12 +35,12 @@ class Authenticate {
 				);
 				Messages::setMsg('You can now add posts', 'success');
 				// Redirect to Posts
-				header('Location: '.ROOT_URL . 'dashboard/main');
+				header('Location: '.ROOT_URL . 'admin/dashboard/main');
 			} 
 			else {
 				Messages::setMsg('Incorrect Login', 'error');
 				// Redirect to Login Page
-				header('Location: '.ROOT_URL.'authenticate/login');
+				header('Location: '.ROOT_URL.'admin/authenticate/login');
 			}
 		}
 		else {
@@ -59,7 +59,7 @@ class Authenticate {
 		session_destroy();
 		Messages::setMsg('You successfully logged out', 'success');
 		// Redirect
-		header('Location: '.ROOT_URL . 'authenticate/login');
+		header('Location: '.ROOT_URL . 'admin/authenticate/login');
 	}
 
 /*====================================================

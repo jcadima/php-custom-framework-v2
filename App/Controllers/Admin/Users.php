@@ -12,7 +12,7 @@ class Users {
 		$viewmodel = new User_Model();
 		$data['users'] = $viewmodel->getUsers() ;	// get list of posts
 
-		View::renderTemplate($data, "App/Views/admin/users/index.php") ;
+		View::renderAdminTemplate($data, "App/Views/admin/users/index.php") ;
 	}
  
 }

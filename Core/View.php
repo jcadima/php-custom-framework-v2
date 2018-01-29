@@ -10,7 +10,7 @@ class View {
 
 	public static function renderAdminTemplate( $viewData, $viewPath) {
 		extract($viewData) ;
-		require('App/Views/adminMain.php') ;
+		require('App/Views/adminlayout.php') ;
 	}
 	
 }

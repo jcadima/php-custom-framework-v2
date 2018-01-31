@@ -15,17 +15,14 @@ A simple blog and user registration is integrated into this php custom framework
 
 ### Installation
 
-Download Version 1:
-[php-framework-v1](http://juancadima.com/downloads/phpframework/phpframework.zip)
-
-Download Version 2 (current):
+Download Version 2:
 [php-framework v2](https://github.com/jcadima/php-custom-framework-v2/archive/master.zip)
 
 The only requirements are to have a working Apache web server with PHP running at least v5.3<br>
 Also a nginx file is provided:  [nginx_config.txt](https://github.com/jcadima/php-custom-framework-v2/blob/master/nginx_config.txt)
 
 ### Note for IIS servers: 
-The following web.config file may work but its not guaranteed: web.config
+The following web.config file may work but its not guaranteed: [web.config](https://github.com/jcadima/php-custom-framework-v2/blob/master/web.config.txt)
 
 ### Project Details & Structure
 - The main URL structure should be in this format: 

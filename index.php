@@ -14,27 +14,23 @@ require 'init/init.php' ; // session, config/autoloading
 
 $router = new Core\Router();
  
-// Add the routes
+// Add regex routes
 $router->add("@^$@i") ; // homepage
 
-// matches: controller
+// matches: contact
 $router->add("@^(?P<controller>[a-z-]+)$@i") ;
 
 // matches: controller/action
 $router->add("@^(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)$@i") ;
 
-// matches:  users/4/delete
-$router->add("@^(?P<controller>[a-z-]+)/(?P<id>\d+)/(?P<action>[a-z-]+)$@i") ;
-
-// matches:  users/edit/3
+// matches:  controller/method/{params}
 $router->add("@^(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)/(?P<id>\d+)$@i") ;
 
-// matches: admin/users/index
+// matches: admin/controller/method
 $router->add("@^admin/(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)$@i") ;
 
-// matches: admin/users/4/edit
-$router->add("@^admin/(?P<controller>[a-z-]+)/(?P<id>\d+)/(?P<action>[a-z-]+)$@i") ;
 
+// echo 'Show Routes'; 
 echo '<pre>'; 
 print_r($router->getRoutes() ) ;
 echo '</pre>';

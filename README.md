@@ -1,11 +1,11 @@
-# ARMADILLO CUSTOM PHP FRAMEWORK V2.0
+# ARMADILLO CUSTOM PHP FRAMEWORK V2.2
 
 This is a custom PHP framework for personal web applications, it aims to be simple, lightweight and flexible, the code is for learning purposes and is not intended to be used "as is" in production environments.
 A simple blog and user registration is integrated into this php custom framework.
 
 
 ### REQUIREMENTS
-- PHP 5.3.x > with PDO
+- PHP 5.3.x or greater, PDO
 
 ### TUTORIAL
 [mvc-tutorial](http://juancadima.com/custom-php-mvc-framework-part-1-introduction/)
@@ -31,9 +31,32 @@ http://domain/controller/action/{params}
 ```
 action and {params} are optional, if controller is not specified it will use a specified default home controller.
 
-To call a view
+Routing system based on regular expressions:
+
+```php
+// match homepage
+$router->add("@^$@i") ;
+
+// matches: controller
+$router->add("@^(?P<controller>[a-z-]+)$@i") ;
+
+// matches: controller/action
+$router->add("@^(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)$@i") ;
+
+// matches:  controller/method/{params}
+$router->add("@^(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)/(?P<id>\d+)$@i") ;
+
+// matches: admin/controller/method
+$router->add("@^admin/(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)$@i") ;
+```
+
+```php
+// To call a view
 ```php
 View::renderTemplate($data, "App/Views/blog/index.php") ;
+
+// To call an admin view
+View::renderAdminTemplate($data, "App/Views/admin/posts/index.php") ;
 ```
 
 - Directories under /views share the same name of the controller class, for example a controller Home has a view called /views/home , and inside the folder name you would have and index and/or another file that would describe the action

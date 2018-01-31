@@ -22,7 +22,6 @@ class Router{
 	ADD - add to routes array
 ====================================================*/
     public function add($route)  {
-    	echo 'Adding route: ' . $route . '<br>'  ;
         $this->routes[] = $route;
     }
 
@@ -30,17 +29,12 @@ class Router{
 	MATCH - return true if route matches the regex or return false
 ====================================================*/
 	public function match($url) {
-		$i = 1;
 		foreach( $this->routes as $route ) {
-			echo $i . ': Route ' . $route . '<br>' ;
 			if( preg_match($route, $url, $matches) ) {
 				// build route for dispatch method
-				echo 'Found Match for:  ' . $url . ' at: ' .  $route .  '<br>' ;
-				$this->setRoute( $url ) ;
-				
+				$this->setRoute( $url ) ;				
 				return true;
 			}
-			$i++;
 		}
 		return false; 
 	}
@@ -75,7 +69,6 @@ class Router{
 	SET NAMESPACE - set default namespace or admin namespace
 ===========================================================*/
     protected function setNamespace($url) {
-    	echo 'Setting Namespace: ' . $url . '<br>' ;
         // defaults to App/Controllers if it does not have a namespace specified already
         $this->namespace = 'App\Controllers\\';
         if ( $url == 'admin' ) {
@@ -95,24 +88,18 @@ class Router{
 	CREATE CONTROLLER - create controller
 ====================================================*/
 	public function dispatch() {
-		echo 'Passing url to dispatch ' . $this->url . '<br>' ;
 		if ( $this->match($this->url) ) {
 			$controller = $this->getNamespace() . $this->controller;
-			echo '<br>DISPATCH: ' . $this->getNamespace() .  ucfirst( $this->controller ) . '<br>' ;
 			if ( !$this->controller  )  {
 				$home = new \App\Controllers\Home() ;
 				$home->index() ;
 			}
 
 			elseif( class_exists( $controller )   ) {
-				//$this->controller  = $this->getNamespace() . ucfirst( $this->controller ) ;
-				echo '<br>URL_CONTROLLER: ' . $controller  . '<br>';
-				//echo 'URL_ACTION: ' . $this->url_action . '<br>' ;
 				$action = $this->action;
 				$objcontroller = new $controller();  // NEW CONTROLLER
 
 					if(method_exists( $controller  , $action )) {
-
 						if ( !empty( $this->params && $this->params != "" ) ) {
 				 			call_user_func_array( array( $objcontroller, $action ), $this->params ) ;
 						}

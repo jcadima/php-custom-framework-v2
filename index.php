@@ -29,12 +29,6 @@ $router->add("@^(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)/(?P<id>\d+)$@i") ;
 // matches: admin/controller/method
 $router->add("@^admin/(?P<controller>[a-z-]+)/(?P<action>[a-z-]+)$@i") ;
 
-
-// echo 'Show Routes'; 
-echo '<pre>'; 
-print_r($router->getRoutes() ) ;
-echo '</pre>';
-
-$controller = $router->dispatch();
+$router->dispatch();
 
 

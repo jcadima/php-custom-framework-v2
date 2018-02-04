@@ -32,9 +32,11 @@ class Router{
 		foreach( $this->routes as $route ) {
 			if( preg_match($route, $url, $matches) ) {
 				// build route for dispatch method
-				$this->setRoute( $url ) ;				
+				$this->setRoute( $url ) ;
+				
 				return true;
 			}
+	
 		}
 		return false; 
 	}
@@ -90,16 +92,21 @@ class Router{
 	public function dispatch() {
 		if ( $this->match($this->url) ) {
 			$controller = $this->getNamespace() . $this->controller;
+
 			if ( !$this->controller  )  {
 				$home = new \App\Controllers\Home() ;
 				$home->index() ;
 			}
 
 			elseif( class_exists( $controller )   ) {
+				//$this->controller  = $this->getNamespace() . ucfirst( $this->controller ) ;
+			
+				//echo 'URL_ACTION: ' . $this->url_action . '<br>' ;
 				$action = $this->action;
 				$objcontroller = new $controller();  // NEW CONTROLLER
 
 					if(method_exists( $controller  , $action )) {
+
 						if ( !empty( $this->params && $this->params != "" ) ) {
 				 			call_user_func_array( array( $objcontroller, $action ), $this->params ) ;
 						}

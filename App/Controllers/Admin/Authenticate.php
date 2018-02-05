@@ -2,8 +2,8 @@
 
 namespace App\Controllers\Admin;
 
-use \Core\View;
-use \Core\Messages;
+use Core\View;
+use Core\Messages;
 use App\Models\User_Model;
 
 class Authenticate {

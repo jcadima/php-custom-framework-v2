@@ -2,10 +2,22 @@
 
 namespace App\Controllers\Admin;
 
-use \Core\View;
+use Core\Messages;
+use Core\View;
 use App\Models\User_Model;
 
 class Users {
+
+/*====================================================
+	CONSTRUCTOR - check if logged in 
+====================================================*/
+	public function __construct() {
+		Messages::isLoggedIn() ;
+	}
+
+/*====================================================
+	USERS INDEX
+====================================================*/
 	public function index() {
 
 		$data['pagetitle'] = 'Dashboard - Users';

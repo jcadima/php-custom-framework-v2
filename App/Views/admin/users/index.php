@@ -1,5 +1,4 @@
 <!-- /App/Views/admin/users/index.php -->
-<?php  Core\Messages::isLoggedIn() ; ?>
 
 <h1>ADMIN DASHBOARD PAGE FOR USERS</h1>
 

@@ -76,6 +76,7 @@ class Router{
         if ( $url == 'admin' ) {
             $this->namespace = 'App\Controllers\Admin\\';
         }
+      
     }
 
 /*====================================================

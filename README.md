@@ -9,9 +9,6 @@ A simple blog and user registration is integrated into this php custom framework
 
 ### Installation
 
-Download Version 2:
-[php-framework v2](https://github.com/jcadima/php-custom-framework-v2/archive/master.zip)
-
 The only requirements are to have a working Apache web server with PHP running at least v5.3<br>
 Also a nginx file is provided:  [nginx_config.txt](https://github.com/jcadima/php-custom-framework-v2/blob/master/nginx_config.txt)
 
@@ -114,24 +111,6 @@ Users:
 | register_date | datetime     | NO   |     | CURRENT_TIMESTAMP |                |
 +---------------+--------------+------+-----+-------------------+----------------+
 ```
-
-Settings:
-in progress
-
-
-### Todo
-
-* [x] Implement new htaccess rewrite
-* [x] New Routing System based on regular expressions
-* [x] Assign namespace based on class name
-* [x] Allow passing dynamic method arguments
-* [x] Dynamically create new instances based on URL controller names
-* [X] Create new admin dashboard 
-* [ ] User interface to create/edit/delete Pages and Posts
-* [ ] Add main site settings
-* [ ] Integrate Google maps (allow user to enter an address and draw map directions)
-
-
 
 
 

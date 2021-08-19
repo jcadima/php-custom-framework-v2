@@ -7,12 +7,6 @@ A simple blog and user registration is integrated into this php custom framework
 ### REQUIREMENTS
 - PHP 5.3.x or greater, PDO
 
-### TUTORIAL
-[mvc-tutorial](http://juancadima.com/custom-php-mvc-framework-part-1-introduction/)
-
-### DEMO
-[demo](http://phpframework.juancadima.com/)
-
 ### Installation
 
 Download Version 2:

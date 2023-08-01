@@ -3,7 +3,7 @@
   <title><?php echo $pagetitle ;  ?></title>
   <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/bootstrap.css">
   <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/style.css">
-  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="<?php echo ROOT_PATH; ?>assets/js/bootstrap.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <a class="navbar-brand" href="http://juancadima.com"><img src="http://phpframework.juancadima.com/assets/images/jc_frameworklogo.png"></a>
+         <a class="navbar-brand" href="http://jcadima.dev"><img src="https://jcadima.dev/images/logo.png"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
